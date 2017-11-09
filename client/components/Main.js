@@ -8,7 +8,7 @@ const Main = React.createClass({
 				<h1>
 					<Link to="/">Galeri Foto</Link>
 				</h1>
-				<p>Hello Main</p>
+				{React.cloneElement(this.props.children, this.props)}
 			</div>
 		)
 	}
